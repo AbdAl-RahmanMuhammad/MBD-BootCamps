@@ -1,0 +1,8 @@
+-ID:/EDUCATION/Programming/Simulink/Code_generation_practice/GenerateSubsystemAsAReusableFunctionExample
+-ID:/EDUCATION/Programming/Simulink/Code_generation_practice/GenerateSubsystemAsAReusableFunctionExample/SubsystemAtomic_ert_rtw
+-IC:/Program\ Files/MATLAB/R2024a/extern/include
+-IC:/Program\ Files/MATLAB/R2024a/simulink/include
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/ert
+-ID:/EDUCATION/Programming/Simulink/Code_generation_practice/GenerateSubsystemAsAReusableFunctionExample/slprj/ert/_sharedutils
