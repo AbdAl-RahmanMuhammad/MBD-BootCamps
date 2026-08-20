@@ -1,0 +1,31 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "SubsystemAtomic"};
+	this.sidHashMap["SubsystemAtomic"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "SubsystemAtomic:5"};
+	this.sidHashMap["SubsystemAtomic:5"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<Root>/In1"] = {sid: "SubsystemAtomic:1"};
+	this.sidHashMap["SubsystemAtomic:1"] = {rtwname: "<Root>/In1"};
+	this.rtwnameHashMap["<Root>/Build ERT"] = {sid: "SubsystemAtomic:2"};
+	this.sidHashMap["SubsystemAtomic:2"] = {rtwname: "<Root>/Build ERT"};
+	this.rtwnameHashMap["<Root>/Build GRT"] = {sid: "SubsystemAtomic:3"};
+	this.sidHashMap["SubsystemAtomic:3"] = {rtwname: "<Root>/Build GRT"};
+	this.rtwnameHashMap["<Root>/Gain"] = {sid: "SubsystemAtomic:4"};
+	this.sidHashMap["SubsystemAtomic:4"] = {rtwname: "<Root>/Gain"};
+	this.rtwnameHashMap["<Root>/SS1"] = {sid: "SubsystemAtomic:5"};
+	this.sidHashMap["SubsystemAtomic:5"] = {rtwname: "<Root>/SS1"};
+	this.rtwnameHashMap["<Root>/Sum"] = {sid: "SubsystemAtomic:9"};
+	this.sidHashMap["SubsystemAtomic:9"] = {rtwname: "<Root>/Sum"};
+	this.rtwnameHashMap["<Root>/Out1"] = {sid: "SubsystemAtomic:10"};
+	this.sidHashMap["SubsystemAtomic:10"] = {rtwname: "<Root>/Out1"};
+	this.rtwnameHashMap["<S1>/In1"] = {sid: "SubsystemAtomic:6"};
+	this.sidHashMap["SubsystemAtomic:6"] = {rtwname: "<S1>/In1"};
+	this.rtwnameHashMap["<S1>/Integrator"] = {sid: "SubsystemAtomic:7"};
+	this.sidHashMap["SubsystemAtomic:7"] = {rtwname: "<S1>/Integrator"};
+	this.rtwnameHashMap["<S1>/Out1"] = {sid: "SubsystemAtomic:8"};
+	this.sidHashMap["SubsystemAtomic:8"] = {rtwname: "<S1>/Out1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();
